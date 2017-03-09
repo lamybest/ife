@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>任务七：实现常见的技术产品官网的页面架构及样式布局</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/task_07.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<header class="clearfix">
+				<div class="header-left fl">
+					<div class="logo">新世界</div>
+				</div>
+				<ul class="header-right fr clearfix">
+					<li class="home active">
+						<a href="#">首页</a>
+					</li>
+					<li class="activity">
+						<a href="#">最新活动</a>
+					</li>
+					<li class="project">
+						<a href="#">项目介绍</a>
+					</li>
+					<li class="caring-community">
+						<a href="#">爱心社区</a>
+					</li>
+					<li class="about">
+						<a href="#">关于我们</a>
+					</li>
+					<li>
+						<a href="#">登录</a>
+					</li>
+				</ul>
+			</header>
+			<!--header-->
+			<div class="banner">
+				<div class="banner-info">
+					<h1 class="banner-title">Time of new life</h1>
+					<p class="title-info">新时代，年轻的人们让我们一起体验新生活，享受新生活</p>
+					<button type="button" class="experience-btn">开始体验</button>
+				</div>
+			</div>
+			<!--banner-->
+			<div class="nav">
+				<div class="nav-img-box">
+					<div class="img-box">
+						<img src="images/03.jpg" alt="open new world">
+					</div>
+					<div class="img-box">
+						<img src="images/05.jpg" alt="open new world">
+					</div>
+					<div class="img-box">
+						<img src="images/06.jpg" alt="open new world">
+					</div>
+					<div class="img-box">
+						<img src="images/04.jpg" alt="open new world">
+					</div>
+				</div>
+				<div>
+					<div class="info-box">
+						<p>打造全新世界观，让你更<br>爱你的生活</p>
+					</div>
+					<div class="info-box">
+						<p>丰富多彩的公益生活，发<br>挥新世界的主人公意识</p>
+					</div>
+					<div class="info-box">
+						<p>时尚的新理念，超前体验<br>未知的生活</p>
+					</div>
+					<div class="info-box">
+						<p>完善的培养机制，培养你<br>全新的世界观</p>
+					</div>
+				</div>
+			</div>
+			<!--nav-->
+			<div class="about-world">
+				<img src="images/07.jpg" alt="about world">
+				<p>关于新世界，你不知道的还有什么？</p>
+			</div>
+			<!--about-world-->
+			<div class="find-city">
+				<p class="city-title">查找新世界城市活动信息</p>
+				<p class="city-line"></p>
+				<p class="city-subtitle">每个城市都有不同的活动信息，请自主查询您所需要了解的城市</p>
+				<form class="city-form">
+					<select class="city-select" disabled="disabled">
+						<option selected="selected">中国</option>
+						<option>美国</option>
+					</select>
+					<div class="checked">
+						<select class="city-select" disabled="disabled">
+							<option selected="selected">省份</option>
+							<option>北京市</option>
+						</select>
+						<ul class="drop-down-box">
+							<li class="chosen"><i></i>北京市</li>
+							<li><i></i>天津市</li>
+							<li><i></i>河北省</li>
+							<li><i></i>内蒙古自治区</li>
+							<li><i></i>辽宁省</li>
+							<li><i></i>深圳市</li>
+						</ul>
+					</div>
+					
+					
+					<select class="city-select" disabled="disabled">
+						<option selected="selected">城市</option>
+						<option>北京市</option>
+					</select>
+					<input type="submit" value="搜    索" class="city-search" />
+				</form>
+			</div>
+			<!--find-city-->
+			<div class="activity-list">
+				<ul class="activity-list-ul">
+					<li>
+						<img src="images/small_01.jpg" alt="北京活动" />
+						<p class="activity-title">北京活动</p>
+						<p class="activity-subtitle">新社区大联盟</p>
+					</li>
+					<li>
+						<p class="sh-title">上&nbsp;&nbsp;&nbsp;&nbsp;海&nbsp;&nbsp;&nbsp;&nbsp;活&nbsp;&nbsp;&nbsp;&nbsp;动</p>
+						<p class="sh-subtitle">夜上海新景观探索 </p>
+						<img src="images/small_02.jpg" alt="上海活动" />
+					</li>
+					<li>
+						<img src="images/small_03.jpg" alt="深圳活动" />
+						<p class="activity-title">深圳活动</p>
+						<p class="activity-subtitle">全新海岸线观点站</p>
+					</li>
+					<li>
+						<img src="images/small_04.jpg" alt="香港活动" />
+						<p class="activity-title">香港活动</p>
+						<p class="activity-subtitle">奢侈消费大派送</p>
+					</li>
+				</ul>
+			</div>
+			<!--activity-list-->
+			<div class="new-world">
+				<div class="new-world-img inline-b">
+					<h1>新世界</h1>
+					<h2>TIME</h2>
+					<P class="at">&copy;新世界-北京</P>
+					<p>2016.04.01</p>
+				</div>
+				<div class="new-world-right inline-b">
+					<p class="new-world-right-title">新世界/<span class="new-world-num">01</span></p>
+					<p class="new-world-right-info">
+						新世界是个新世界新世界是个新世界新世界是个新世界 新世界是个新世界新世界是个新世界新世界是个新世界 新世界是个新世界新世界是个新世界新世界是个新世界 新世界是个新世界新世界是个新世界
+					</p>
+					<button type="button" class="more-btn">更多详情</button>
+					<ul class="round-list">
+						<li class="current inline-b"></li>
+						<li class="inline-b"></li>
+						<li class="inline-b"></li>
+					</ul>
+				</div>
+			</div>
+			<!--new-world-->
+			<div class="new-era">
+				<div class="new-era-left-box inline-b">
+					<p class="new-era-title">新时代</p>
+					<p class="new-era-subtitle">关于爱生活的我们</p>
+					<div class="new-era-line"></div>
+					<a href="#" class="more-view">查看更多</a>
+				</div>
+				<div class="new-era-right-box inline-b">
+					<p class="new-era-title">新时代</p>
+					<p class="new-era-subtitle">关于爱生活的我们</p>
+					<div class="new-era-line"></div>
+					<a href="#" class="more-view">查看更多</a>
+				</div>
+				<div class="new-era-img-box inline-b">
+				</div>
+			</div>
+			<!--new-era-->
+			<div class="become-volunteer">
+				<div class="text-center">
+					<p class="volunteer-title">成为我们的志愿者</p>
+					<p class="volunteer-line"></p>
+					<p class="volunteer-subtitle">新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情 那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+				</div>
+				<div class="volunteer-main">
+					<div class="volunteer-left inline-b">
+						<p class="agreement-title">新世界志愿者协议</p>
+						<p class="agreement-info">加入新世界志愿者的人员必须遵守中华人民共共和国的 相关法律法规，并且本着平等资源的原则 ......</p>
+						<p class="text-right">
+							<a href="#" class="more-link"><i></i>more</a>
+						</p>
+						<p class="agreement-title interest">新世界志愿者权利</p>
+						<p class="agreement-info">新世界志愿者享受新世界内部所有资源共享的权利，并 且享受所在四新世界活动的优先参与资格</p>
+						<p class="text-right">
+							<a href="#" class="more-link"><i></i>more</a>
+						</p>
+						<p class="agreement-title more-clause">更多条款</p>
+						<p class="text-right">
+							<a href="#" class="more-link"><i></i>more</a>
+						</p>
+					</div>
+					<div class="volunteer-right inline-b">
+						<form>
+							<p>
+								<input type="text" class="text name" placeholder="姓名:" />
+								<input type="text" class="text" placeholder="年龄:" />
+							</p>
+							<p>
+								<input type="text" class="text phone" placeholder="联系方式:" />
+								<input type="text" class="text" placeholder="联系地址:" />
+							</p>
+							<textarea placeholder="请简单描述您梦想的生活:" class="life"></textarea>
+							<p class="submit-content">
+								<input type="submit" class="submit-btn" value="提交申请">
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!--become-volunteer-->
+			<div class="contact-us">
+				<p class="contact-us-title">联系我们</p>
+				<p class="contact-us-subtitle">为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯 也可以通过以下任何方式关注我们动态</p>
+				<p class="contact-us-input">
+					<input type="email" placeholder="someone@email.com" class="email" /><input type="submit" value="提 交" class="submit-email"/>
+				</p>
+				<img src="images/10.jpg" alt="share" />
+			</div>
+			<!--contact-us-->
+			<footer class="clearfix">
+				<div class="footer-left fl">&copy;2015新世界</div>
+				<div class="footer-right fr">Back to top</div>
+			</footer>
+		</div>
+
+	</body>
+
+</html>

@@ -1,13 +1,737 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>任务九：使用HTML/CSS实现一个复杂页面</title>
+		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/task_09.css" />
 	</head>
+
 	<body>
-		<header>
-			
+		<header class="clearfix">
+			<div class="header-logo fl">
+				<img src="images/logo.png" alt="logo">
+			</div>
+			<div class="fr clearfix">
+				<div class="header-search fl">
+					<div class="bg"></div>
+					<div class="content">
+						<form id="header-search-form">
+							<input type="button" class="button">
+							<input type="text" class="input">
+						</form>
+					</div>
+				</div>
+				<a href="#" class="login-link fl"><i></i><span>登录</span></a>
+			</div>
 		</header>
+		<!--header-->
+		<div class="main clearfix">
+			<div class="main-left fl">
+				<div class="personal">
+					<div class="inline-b circle">
+						<div class="disc"></div>
+					</div>
+					<p class="inline-b name">ABC123</p>
+				</div>
+				<div class="tag-content">
+					<div class="tag collection-tag inline-b">
+						<p class="collection-num">110</p>
+						<p class="collection">收藏</p>
+					</div>
+					<div class="tag inline-b">
+						<p class="fans-num">313</p>
+						<p class="fans">粉丝</p>
+					</div>
+				</div>
+				<div class="tree-menu">
+					<ul class="tree-menu-ul">
+						<img src="images/report.png" alt="report"><span class="own-report">个人报表</span>
+						<ul>
+							<li>
+								<img src="images/right-menu.png" alt="arrow">
+								<img src="images/folder.png" class="folder-img" alt="folder">
+								<span class="folder1">文件一</span>
+							</li>
+							<li class="open-folder">
+								<img src="images/down.png" alt="arrow">
+								<img src="images/folder1.png" class="folder-img" alt="folder">
+								<span class="opened">文件二</span>
+								<ul>
+									<li>
+										<img src="images/file.png" alt="file">
+										<span class="opened">文档1</span>
+									</li>
+									<li>
+										<img src="images/file1.png" alt="file">
+										<span>文档1</span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<img src="images/right-menu.png" alt="arrow">
+								<img src="images/folder.png" class="folder-img" alt="folder">
+								<span class="folder1">文件三</span>
+							</li>
+						</ul>
+					</ul>
+				</div>
+				<ul class="ul-menu">
+					<li>
+						<img src="images/star.png" alt="star">
+						<span>个人收藏</span>
+					</li>
+					<li>
+						<img src="images/share.png" alt="share">
+						<span>我的分享</span>
+					</li>
+					<li>
+						<img src="images/star.png" alt="star">
+						<span>图库</span>
+					</li>
+					<li>
+						<img src="images/star.png" alt="star">
+						<span>成长记录</span>
+					</li>
+					<li>
+						<img src="images/account.png" alt="account">
+						<span>账户信息</span>
+					</li>
+				</ul>
+			</div>
+			<!--main-left-->
+			<div class="main-right fl">
+				<div class="route">
+					<span>C站</span> / <span>个人报表</span> / <span>文件一</span>／<span class="active">文档一</span>
+				</div>
+				<div class="query-content">
+					<form>
+						<div class="query-item">
+							<label>查询项</label>
+							<select class="small-select">
+								<option>第一项</option>
+							</select>
+						</div>
+						<div class="query-item">
+							<p>
+								<label>买方</label>
+								<select>
+									<option>小A</option>
+								</select>
+							</p>
+							<p>
+								<label>卖方</label>
+								<select>
+									<option>小C</option>
+								</select>
+							</p>
+						</div>
+						<div class="query-item">
+							<p>
+								<label>日期</label>
+								<input type="date" name="user_date" placeholder="2017-03-10" />
+							</p>
+							<p>
+								<label>人数</label>
+								<select class="small-select">
+									<option>10人</option>
+								</select>
+							</p>
+						</div>
+						<div class="query-item text-right">
+							<p>
+								<label>总耗时</label>
+								<select class="small-select">
+									<option>8天</option>
+								</select>
+							</p>
+							<p>
+								<label>成交项</label>
+								<select>
+									<option>10项</option>
+								</select>
+							</p>
+						</div>
+						<p class="search-item inline-b">
+							<input type="submit" class="search-btn" value="搜索" />
+						</p>
+					</form>
+				</div>
+				<!--query-content-->
+				<div class="text-center">
+					<div class="arrow inline-b">
+						<img src="images/left.jpg" alt="left">
+					</div>
+					<div class="money-content inline-b active">
+						<p class="time">10:00 am</p>
+						<p class="money">￥<span>1200</span></p>
+					</div>
+					<div class="money-content inline-b">
+						<p class="time">10:00 am</p>
+						<p class="money">￥<span>1200</span></p>
+					</div>
+					<div class="money-content inline-b">
+						<p class="time">10:00 am</p>
+						<p class="money">￥<span>1200</span></p>
+					</div>
+					<div class="money-content inline-b">
+						<p class="time">10:00 am</p>
+						<p class="money">￥<span>1200</span></p>
+					</div>
+					<div class="money-content inline-b">
+						<p class="time">10:00 am</p>
+						<p class="money">￥<span>1200</span></p>
+					</div>
+					<div class="money-content inline-b">
+						<p class="time">10:00 am</p>
+						<p class="money">￥<span>1200</span></p>
+					</div>
+					<div class="arrow inline-b">
+						<img src="images/right.jpg" alt="right">
+					</div>
+					<div class="history-query inline-b">
+						<div class="inline-b query-img">
+							<img src="images/history.jpg" alt="history query" />
+						</div>
+						<p class="inline-b">历史查询</p>
+					</div>
+				</div>
+				<!--历史查询-->
+				<div class="april-statistics">
+					<h2>2016年4月份统计</h2>
+					<div class="text-center">
+						<div class="statistics-content inline-b">
+							<div class="statistics-volume inline-b">
+								<p class="num">133311</p>
+								<p class="volume">成交量</p>
+							</div>
+							<div class="statistics-img inline-b"></div>
+						</div>
+
+						<div class="statistics-content blue-border inline-b">
+							<div class="statistics-volume inline-b">
+								<p class="num">133311</p>
+								<p class="volume">成交量</p>
+							</div>
+							<div class="statistics-img blue-img inline-b"></div>
+						</div>
+
+						<div class="statistics-content red-border inline-b">
+							<div class="statistics-volume inline-b">
+								<p class="num">133311</p>
+								<p class="volume">成交量</p>
+							</div>
+							<div class="statistics-img red-img inline-b"></div>
+						</div>
+
+						<div class="statistics-content yellow-border inline-b">
+							<div class="statistics-volume inline-b">
+								<p class="num">133311</p>
+								<p class="volume">成交量</p>
+							</div>
+							<div class="statistics-img yellow-img inline-b"></div>
+						</div>
+
+					</div>
+				</div>
+				<!--2016年4月份统计-->
+				<div class="first-group-project">
+					<div class="project-box inline-b">
+						<div class="project-header">
+							<p>第一组项目</p>
+						</div>
+						<div class="project-wrap">
+							<ul class="project-tab">
+								<li class="active">项目一</li>
+								<li>项目一</li>
+								<li>项目一</li>
+								<li>项目一</li>
+								<li>项目一</li>
+							</ul>
+
+							<div class="project-content">
+								<table class="project-table">
+									<tr>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+										<td>购买材料一</td>
+									</tr>
+									<tr>
+										<td>购买材料二 </td>
+										<td>购买材料二</td>
+										<td>购买材料二</td>
+										<td>购买材料二</td>
+									</tr>
+									<tr>
+										<td>购买材料四</td>
+										<td>购买材料四</td>
+										<td>购买材料四</td>
+										<td>购买材料四</td>
+									</tr>
+									<tr>
+										<td>购买材料六</td>
+										<td>购买材料六</td>
+										<td>购买材料六</td>
+										<td>购买材料六</td>
+									</tr>
+									<tr>
+										<td>购买材料十三</td>
+										<td>购买材料十三</td>
+										<td>购买材料十三</td>
+										<td>购买材料十三</td>
+									</tr>
+									<tr>
+										<td>购买材料二十</td>
+										<td>购买材料二十</td>
+										<td>购买材料二十</td>
+										<td>购买材料二十</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<!--project-wrap-->
+					</div>
+					<!--project-box-->
+					<div class="project-box project-search inline-b">
+						<div class="project-header">
+							<p>第一组项目</p>
+						</div>
+						<div class="project-search-content">
+							<h2>标题</h2>
+							<p class="project-report">项目报表三</p>
+							<div class="project-report-item inline-b">
+								<p>价格</p>
+								<p>￥158</p>
+							</div>
+							<div class="project-report-item project-report-charge inline-b">
+								<p>负责人</p>
+								<p>小A</p>
+							</div>
+							<p class="detail-description">详细描述</p>
+							<p class="detail-description-info">该项目目前负责人是</p>
+							<div class="project-bottom">
+								<input type="checkbox" id="agreement" class="agree-checkbox" checked="checked" />
+								<label for="agreement" class="agree-check">遵守保密协议</label>
+								<input type="submit" class="project-search-btn" value="搜索" />
+							</div>
+						</div>
+					</div>
+					<!--project-box-日历-->
+					<div class="project-box project-search calendar mt-9 inline-b">
+						<div class="project-header">
+							<p>日历</p>
+						</div>
+						<div class="calendar-box">
+							<div>
+								<select class="calendar-select year">
+									<option>2016年</option>
+								</select>
+								<select class="calendar-select month">
+									<option>4月</option>
+								</select>
+								<select class="calendar-select date-marked">
+									<option>标注日期</option>
+								</select>
+								<button type="button" class="back-today">返回今天</button>
+							</div>
+							<div class="calendar-table">
+								<table class="op-calendar-table">
+									<tr class="week-box">
+										<th>一</th>
+										<th>二</th>
+										<th>三</th>
+										<th>四</th>
+										<th>五</th>
+										<th>六</th>
+										<th>日</th>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">1</span> 
+													<span class="op-calendar-new-table-almanac festival">廿四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">2</span> 
+													<span class="op-calendar-new-table-almanac">廿五</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">3</span> 
+													<span class="op-calendar-new-table-almanac">廿六</span> 
+												</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">4</span> 
+													<span class="op-calendar-new-table-almanac">廿七</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">5</span> 
+													<span class="op-calendar-new-table-almanac">清明</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">6</span> 
+													<span class="op-calendar-new-table-almanac">廿九</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">7</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">8</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">9</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">10</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">11</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">12</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">13</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">14</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">15</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">16</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">17</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">18</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">19</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">20</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">21</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">22</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">23</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">24</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">25</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">26</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">27</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">28</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">29</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td>
+											<div class="op-calendar-new-relative">
+												<a href="javascript:;" class="">
+													<span class="op-calendar-new-daynumber">30</span> 
+													<span class="op-calendar-new-table-almanac">初四</span> 
+												</a>
+											</div>
+										</td>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+						</div>
+
+					</div>
+					<!--project-box-日历-->
+					<div class="project-box mt-9 inline-b">
+						<div class="project-header">
+							<p>汽车行业品牌榜</p>
+						</div>
+						<table class="car-table">
+							<thead>
+								<tr>
+									<th>排名</th>
+									<th>品牌</th>
+									<th class="text-left search-name">搜索指数</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>大众</td>
+									<td class="text-left search-index-td">
+										<span class="search-index">48912001</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>2 </td>
+									<td>丰田</td>
+									<td class="text-left search-index-td">
+										<span class="search-index">48912001</span>
+										<div class="progress">
+											<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>奥迪</td>
+									<td class="text-left search-index-td">
+										<span class="search-index">48912001</span>
+										<div class="progress">
+											<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>本田</td>
+									<td class="text-left search-index-td">
+										<span class="search-index">48912001</span>
+										<div class="progress">
+											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 51%;"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>福特</td>
+									<td class="text-left search-index-td">
+										<span class="search-index">48912001</span>
+										<div class="progress">
+											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 48%;"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>宝马</td>
+									<td class="text-left search-index-td">
+										<span class="search-index">48912001</span>
+										<div class="progress">
+											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%;"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>现代</td>
+									<td class="text-left search-index-td">
+										<span class="search-index">48912001</span>
+										<div class="progress">
+											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 42%;"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>起亚</td>
+									<td class="text-left search-index-td">
+										<span class="search-index">48912001</span>
+										<div class="progress">
+											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 39%;"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td>奔驰</td>
+									<td class="text-left search-index-td">
+										<span class="search-index">48912001</span>
+										<div class="progress">
+											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 36%;"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>别克</td>
+									<td class="text-left search-index-td">
+										<span class="search-index">48912001</span>
+										<div class="progress">
+											<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 33%;"></div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+					<!--project-box-->
+				</div>
+				<!--第一组项目-->
+			</div>
+			<!--main-right-->
+		</div>
+		<!--main-->
 	</body>
+
 </html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/task_11.css" />
+		<script>
+			var scale = 1 / window.devicePixelRatio
+			document.write(`
+                           <meta name="viewport" content="initial-scale=${scale},maximum-scale=${scale},minimum-scale=${scale},user-scalable=no">
+                           `)
+		</script>
+		<script>
+			var width = document.documentElement.clientWidth / window.devicePixelRatio
+			var css =`
+			html{
+				font-size:${width / 10 * window.devicePixelRatio}px;
+			}
+			`
+			document.write(`<style>${css}</style>`)
+		</script>
+	</head>
+	<body>
+		<header>
+			<a class="back-btn">&lt;<h2>返回</h2></a>
+			<h1>这是标题</h1>
+		</header>
+		<nav>
+			<ul>
+				<li>导航</li>
+				<li>导航</li>
+				<li>导航</li>
+				<li>导航</li>
+				<li>导航</li>
+			</ul>
+		</nav>
+		<aside>
+			<img src="images/01.jpg" alt=""/>
+		</aside>
+		<section class="label-list">
+			<ul>
+				<li>
+					<img src="images/02.jpg">
+					<h2>标签</h2>
+				</li>
+				<li>
+					<img src="images/02.jpg">
+					<h2>标签</h2>
+				</li>
+				<li>
+					<img src="images/02.jpg">
+					<h2>标签</h2>
+				</li>
+				<li>
+					<img src="images/02.jpg">
+					<h2>标签</h2>
+				</li>
+				<li>
+					<img src="images/02.jpg">
+					<h2>标签</h2>
+				</li>
+			</ul>
+		</section>
+		<div class="wrap">
+			<section class="wrap-item">
+				<img src="images/03.jpg"/>
+				<h1>分栏一</h1>
+				<h2>分栏小标题</h2>
+			</section>
+			<section class="wrap-item">
+				<img src="images/04.jpg"/>
+				<h1>分栏二</h1>
+				<h2>分栏小标题</h2>
+			</section>
+			<section class="wrap-item">
+				<img src="images/05.jpg"/>
+				<h1>分栏三</h1>
+				<h2>分栏小标题</h2>
+			</section>
+		</div>
+		<div class="line"></div>
+		<div class="module">
+			<section>
+				<div class="module-header">
+					<h1>模块一</h1>
+				</div>
+				<div class="module-content">
+					<div class="module-img1">
+						<img src="images/06.jpg" alt="">
+					</div>
+					<div class="module-img2">
+						<img src="images/07.jpg" alt="">
+					</div>
+					<p>这是文案</p>
+					<p>这是文案</p>
+					<p>这是文案</p>
+					<p>这是文案</p>
+					<p>这是文案</p>
+					<p>这是文案</p>
+					<p>这是文案</p>
+					<p>这是文案</p>
+				</div>
+			</section>
+		</div>
+		<div class="line"></div>
+		<div class="module">
+			<section>
+				<div class="module-header">
+					<h1>模块二</h1>
+				</div>
+				<div class="module-content">
+					<div class="module-img1">
+						<img src="images/06.jpg" alt="">
+					</div>
+					<div class="module-img2">
+						<img src="images/07.jpg" alt="">
+					</div>
+					<p>这是文案</p>
+					<p>这是文案</p>
+					<p>这是文案</p>
+					<p>这是文案</p>
+					<p>这是文案</p>
+					<p>这是文案</p>
+					<p>这是文案</p>
+					<p>这是文案</p>
+				</div>
+			</section>
+		</div>
+		<div class="line"></div>
+		<article class="article1">
+			<div class="article1-img">
+				<img src="images/08.jpg" alt="">
+			</div>
+			<div class="article1-title">
+				<h2>这是文章标题字号是22的文章标题</h2>
+				<p>
+					<span>文章来源</span>
+					<span>6分钟前</span>
+				</p>
+			</div>
+		</article>
+		<article class="article1">
+			<div class="article1-img">
+				<img src="images/08.jpg" alt="">
+			</div>
+			<div class="article1-title">
+				<h2>这是文章标题字号是22的文章标题</h2>
+				<p>
+					<span>文章来源</span>
+					<span>6分钟前</span>
+				</p>
+			</div>
+		</article>
+		<article class="article2">
+			<h2>这个也是文章标题字号是22的文章标题</h2>
+			<div>
+				<ul>
+					<li>
+						<img src="images/08.jpg" alt="">
+					</li>
+					<li>
+						<img src="images/08.jpg" alt="">
+					</li>
+					<li>
+						<img src="images/08.jpg" alt="">
+					</li>
+				</ul>
+			</div>
+			<p>
+				<span>文章来源</span>
+				<span>6分钟前</span>
+			</p>
+		</article>
+		<footer></footer>
+	</body>
+</html>

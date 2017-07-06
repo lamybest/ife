@@ -1,0 +1,8 @@
+@function rem($px){
+  $remSize:$px / 320 * 10;
+  @return #{$remSize}rem;
+}
+body{
+  font-size: rem(16);
+}
+
